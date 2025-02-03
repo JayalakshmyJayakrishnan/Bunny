@@ -17,7 +17,8 @@
             cursor: pointer;
         }
         img {
-            width: 200px;
+            width: 300px;
+            height: auto;
             transition: transform 0.3s ease-in-out;
         }
         img:active {
@@ -28,7 +29,7 @@
 <body>
     <h1>Click to Cheer Up the Bunny! 🐰</h1>
     <div class="bunny-container" onclick="toggleBunny()">
-        <img id="bunny" src="/mnt/data/file-YMVye7bcWEkrV8Lb744tNX" alt="Sad Bunny">
+        <img id="bunny" src="https://files.oaiusercontent.com/file-YMVye7bcWEkrV8Lb744tNX?se=2025-02-03T14%3A25%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dimage.png&sig=QbkMNOdOJBNWX7U6lJ0DkpKGnqJq9BQX5fjuGd398Sc%3D" alt="Sad Bunny">
     </div>
     
     <script>
@@ -36,9 +37,9 @@
         function toggleBunny() {
             const bunnyImg = document.getElementById("bunny");
             if (isSad) {
-                bunnyImg.src = "/mnt/data/file-KZH54wfbu3Gvuj9hjqbftL";
+                bunnyImg.src = "https://files.oaiusercontent.com/file-KZH54wfbu3Gvuj9hjqbftL?se=2025-02-03T14%3A28%3A01Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dimage.png&sig=FuzdfJXAE536UX/ZDy8Mutpc/3PqsJyUwPfsXQ1SICs%3D";
             } else {
-                bunnyImg.src = "/mnt/data/file-YMVye7bcWEkrV8Lb744tNX";
+                bunnyImg.src = "https://files.oaiusercontent.com/file-YMVye7bcWEkrV8Lb744tNX?se=2025-02-03T14%3A25%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D299%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dimage.png&sig=QbkMNOdOJBNWX7U6lJ0DkpKGnqJq9BQX5fjuGd398Sc%3D";
             }
             isSad = !isSad;
         }
