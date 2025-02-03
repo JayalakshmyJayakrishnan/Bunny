@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Bunny</title>
+    <style>
+        body {
+            background-color: #FFC0CB; /* Baby pink */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .bunny-container {
+            cursor: pointer;
+        }
+        img {
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+        img:active {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Click to Cheer Up the Bunny! 🐰</h1>
+    <div class="bunny-container" onclick="toggleBunny()">
+        <img id="bunny" src="/mnt/data/file-YMVye7bcWEkrV8Lb744tNX" alt="Sad Bunny">
+    </div>
+    
+    <script>
+        let isSad = true;
+        function toggleBunny() {
+            const bunnyImg = document.getElementById("bunny");
+            if (isSad) {
+                bunnyImg.src = "/mnt/data/file-KZH54wfbu3Gvuj9hjqbftL";
+            } else {
+                bunnyImg.src = "/mnt/data/file-YMVye7bcWEkrV8Lb744tNX";
+            }
+            isSad = !isSad;
+        }
+    </script>
+</body>
+</html>
